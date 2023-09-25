@@ -1,8 +1,9 @@
 import PDFDocument from "pdfkit";
-const path = require("path");
 import merge from "lodash.merge";
 import { transliterate } from "transliteration";
 import MemoryStreams from "memory-streams";
+
+const path = require("path");
 
 interface HeaderImage {
   path: string;

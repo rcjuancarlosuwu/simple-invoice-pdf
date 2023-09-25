@@ -2,7 +2,7 @@
   "name": "simple-invoice-pdf",
   "version": "1.0.0",
   "description": "Simple Invoice PDF Generator",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "tsc"
   },
