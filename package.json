@@ -1,0 +1,29 @@
+{
+  "name": "simple-invoice-pdf",
+  "version": "1.0.0",
+  "description": "Simple Invoice PDF Generator",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "invoice",
+    "pdf",
+    "generator"
+  ],
+  "author": "rcjuancarlosuwu",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@types/lodash.merge": "^4.6.7",
+    "@types/memorystream": "^0.3.1",
+    "@types/pdfkit": "^0.12.12",
+    "lodash.merge": "^4.6.2",
+    "memory-streams": "^0.1.3",
+    "path": "^0.12.7",
+    "pdfkit": "^0.13.0",
+    "transliteration": "^2.3.5"
+  }
+}
