@@ -13,12 +13,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const pdfkit_1 = __importDefault(require("pdfkit"));
-const fs = require("fs");
 const path = require("path");
 const lodash_merge_1 = __importDefault(require("lodash.merge"));
 const transliteration_1 = require("transliteration");
 const memory_streams_1 = __importDefault(require("memory-streams"));
-class Microinvoice {
+class SimpleInvoicePDF {
     constructor(options) {
         this.defaultOptions = {
             style: {
@@ -269,8 +268,6 @@ class Microinvoice {
             });
         });
     }
-    // ... (previously defined class and imports)
-    // Existing class methods above
     /**
      * Generates customer and seller details
      *
@@ -476,5 +473,5 @@ class Microinvoice {
         });
     }
 }
-exports.default = Microinvoice;
+exports.default = { SimpleInvoicePDF };
 //# sourceMappingURL=index.js.map
