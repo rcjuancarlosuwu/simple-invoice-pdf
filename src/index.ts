@@ -673,10 +673,14 @@ class SimpleInvoicePDF {
       pdfStream.on("finish", () => {
         const buffer = pdfStream.toBuffer();
         resolve(buffer);
+        pdfStream.end();
+        pdfStream.destroy();
       });
 
       pdfStream.on("error", (error) => {
         reject(error);
+        pdfStream.end();
+        pdfStream.destroy();
       });
     });
   }
