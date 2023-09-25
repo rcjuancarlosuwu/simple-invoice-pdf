@@ -12,6 +12,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.SimpleInvoicePDF = void 0;
 const pdfkit_1 = __importDefault(require("pdfkit"));
 const path = require("path");
 const lodash_merge_1 = __importDefault(require("lodash.merge"));
@@ -473,5 +474,5 @@ class SimpleInvoicePDF {
         });
     }
 }
-exports.default = { SimpleInvoicePDF };
+exports.SimpleInvoicePDF = SimpleInvoicePDF;
 //# sourceMappingURL=index.js.map
